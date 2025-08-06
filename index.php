@@ -1,3 +1,5 @@
+<?php
+>
 
 <!DOCTYPE html>
 <html lang="pt_BR">
@@ -522,5 +524,6 @@
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     
     </script>
+
 
 </html>
