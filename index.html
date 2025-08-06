@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuance Project</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="image/iconPagina.png" type="imagem/png">
+    <link rel="stylesheet" href="css/decore.css">
+
+    <style class="Skranji">
+        @font-face {
+            font-family:"Skranji" ;
+            src: url('fonts/Skranji/Skranji-Regular.ttf') format('truetype');
+        }
+
+        body {
+            background: #000;
+            color: whitesmoke; 
+            font-family: 'PixelOperator', 'Courier New', monospace;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        h1 { font-size: 40px; font-style: normal; }
+        p { font-size: 15px; }
+
+
+    </style>
+
+    <div class="alert alert-success alert-dismissible fade show" style='text-align: center;' role="alert" id="notificacao">
+        <strong><h2 style='color:purple'>Olá hospede!</h2></strong>
+            <h4 style="color: purple">
+                Caso tenha sugestões de ideias e melhorias para mim. Ou queira entrar em contato para conversar, 
+                compartilharmos ideias e criatividades... Acesse meu</h4>
+            <a href="https://github.com/DenunDEV" class="alert-link"><h4 style="color: black;">Github</h4></a>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="FecharNota"></button> 
+        
+        <script>
+            document.addEventListener('click', function(e) {
+                if (e.target.id === 'FecharNota') {
+                    document.getElementById('notificacao').style.display = 'none';
+                }
+            })
+        </script>
+    </div>
+
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-dark p-4">
+                <h5 class="text-body-emphasis h4">Nuance Project</h5>
+                    <span class="text-body-secondary">
+                        <div class="alert alert-success" role="alert">
+                            <h4>
+                                Site feito para exposição de projetos e portfólio.
+                                O projeto foi criado com rumo de estudo que possa ser atualizado e moldável facilmente.
+                                Projeto vai de código, pixel art, personalização de página e "multi-conteúdos". focado em um perfil otimizado 
+                                para fins profissionais como divulgação de feitos, portfólio e realizações de atividades.
+                            </h4>
+                        </div>
+                    </span>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+    <div>
+        
+        <div class="container-left">
+            <a class="denun" href="#">
+                <img src="image/CatDenun.gif" alt="Logo" width="70" class="cabecalho">
+            </a>
+        </div>
+
+        <h2 style='color: #841ccfff'>DeNun</h2>
+        
+
+    </div>
+        
+
+</head>
+
+    <script>
+
+            Swal.fire({
+                title: 'BEM VINDO',
+                text: 'Este Site foi criado para estudo profissional. Com intuito de aprendizado em PHP, JS, HTML e CSS!',
+                imageUrl: 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXRsdmM3eGo1cXFmMXNoY2VzYWQyanNvaDhsbno4dzhrNXk1MG1mMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/d4s3Pak8YGlDQo5wX5/giphy.gif',
+                imageWidth: 400,
+                imageHeight: 400,
+                imageAlt: 'GIF de carregamento',
+                showConfirmButton: false,
+                background: '#000',
+                color: '#ffffffff',
+                customClass: {
+                    popup: 'my-swal-popup',
+                    title: 'my-swal-title',
+                    htmlContainer: 'my-swal-text'
+                }
+            });
+
+    </script>
+
+<body>
+    
+    <div class="container d-flex justify-content-center my-4">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px;">
+            <div class="carousel-inner border rounded p-2" style="border: 3px solid #841ccfff !important;">
+                    <!-- Definindo uma altura fixa para o container e usando object-fit -->
+                <div class="carousel-item active" data-bs-interval="10000" style="height: 400px;">
+                    <img src="image/DeNunLogo.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="6500" style="height: 400px;">
+                    <img src="image/EspadaSangrenta.gif" class="d-block w-100 h-100" style="object-fit: contain;" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="8000" style="height: 400px;">
+                    <img src="image/ponteiro.gif" class="d-block w-100 h-100" style="object-fit: contain;" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000" style="height: 400px;">
+                    <img src="image\Gatenho.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000" style="height: 400px;">
+                    <img src="image\background4.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000" style="height: 400px;">
+                    <img src="image\Enxada-foice.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000" style="height: 400px;">
+                    <img src="image\Escudo.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000" style="height: 400px;">
+                    <img src="image\meuPersonagem.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000" style="height: 400px;">
+                    <img src="image\FullWallpaperGIF.gif" class="d-block w-100 h-100" style="object-fit: contain;" alt="...">
+                </div>
+                
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+        </div>
+    </div>
+
+    <select style="padding: 10px; margin: 20px; color: whitesmoke; background-color: #841ccfff; border:#841ccfff;" onchange="mostrarConteudo(this)">
+        <option selected disabled>Selecione uma opção</option>
+        <option value="1">Projeto PERSONA</option>
+        <option value="2">Projeto AranhaMOB</option>
+        <option value="3">Projeto 3</option>
+    </select>
+
+    <!-- Div onde o conteúdo será exibido a cada função selecionada -->
+    <div 
+       id="conteudo-exibido" 
+        style="
+        margin: 20px; 
+        padding: 20px; 
+        background-color: black; 
+        color: white;
+        border-radius: 8px;"
+    ></div>
+
+    <script>
+        // Objeto contendo os conteúdos de cada opção
+        const conteudos = {
+                "1": `
+                    <div>
+                        <h3><strong> 📌Projeto PERSONA </strong></h3>
+                            <p>
+                                    Primeiro update feito foi baseado no enriquecimento de informações e organização do sistema para uma fácil busca e leitura,
+                                    tanto no formato de código como também na interface do pygame. Deixando o projeto mais fluído e mas abrangente para uma observação limpa e boa para os usuários.
+
+                                    <p><strong><h3> Planejamento </h3></strong></p>
+                                    <h4></h4>
+                                    O objetivo desse projeto está indo ao rumo de detalhamento de enriquecimentos de cenários, IA, BOT e etc. O plano desse projeto inicial está sendo criar documentação de personagens,
+                                    nisso irá gerar de forma automática ou editar pelo usuário, do jeito que a preferir para essa "pessoa". Nisso estou criando personalidades, aspectos, característica de personagens. 
+                                    Tendo isso em mente, moldando esses "personagens" para terem "vidas", isso vemos que faz falta em alguns aspectos. Como por exemplo:
+                                            <p></p>
+                                                <br>1 - Personagens sem enredo. 
+                                                <br>2 - Sem sua própria maneira de agir. 
+                                                <br>3 - Sem conteúdo a se explorar. 
+                                                <br>4 - Falta de própria história. 
+                                                <br>5 - Mal exploração de personagem. 
+                                                <br>6 - "assistente" virtual (que é você é que tem que ser o assistente dela) 
+                                                <br>7 - Automoção de BOT e IA. 
+                                                <br>8 - O mundo em jogos, que só dão contexto as história principal, e o resto fica vazio.
+                                            <p></p>
+                                    <br>Acima são alguns exemplos simples para exemplificar a dinâmica de planejamento visada deste projeto.
+
+                                    Como um processo de criação e personalização de personagem, precisamos ter as informações básicas nisso. Com tudo, 
+                                    o projeto até agora está tratado em projeto de implementação da identidade dos mesmo, para uso livre de criação de gêneros, características moldáveis a todos, 
+                                    sem restrição de formato de uso, sendo usado para criar informações básicas de histórias, livros, rpg, personagem, cartas, documentos em game, 
+                                    ideias de formulários de aplicativos, criação de personalidade de bot e ia... E assim por diante.
+                                    </h4>
+                            </p>
+
+
+                            <img 
+                                src="image\\Blueknight.png" 
+                                    style="
+                                            max-width: 300px; 
+                                            border-radius: 5px;
+                                            display: block;
+                                            margin: 0 auto;
+                                        "
+                                    ><div style="margin-top: 20px;">
+                                        <a href="https://github.com/DenunDEV/Persona_CreateRPG" target="_blank" style="background: #9f4bcfff; color: black; padding: 8px 12px; text-decoration: none; border-radius: 4px;">🔗 Ver Projeto</a>
+                                        <a href="https://drive.google.com/file/d/1spq6SEKqdtml0WoHZuDaTasJSZg1LZg0/view?usp=sharing" download style="background: #4870bbff; color: black; padding: 8px 12px; text-decoration: none; border-radius: 4px; margin-left: 10px;">⬇️ Baixar Arquivo</a>
+                                    </div>
+                    </div>
+                `,
+
+                "2": 
+                `
+                    <div>
+                        <h2><strong> 🕷️ Aranha Game Mob </strong></h2>
+                            <p>Esse projeto foi criado com um estudo sobre alguns métodos do polimorfismo, 
+                            eu usei o exemplo de uma aranha e mostrando os comportamentos delas enquanto o usuário a controla, 
+                            e nisso cada código tendo sua respectiva função de movimentação, informação, menu, armadilhas, 
+                            formato do mundo e obstáculos.</p>
+                            <p>Um jogo de terminal em Java onde você controla uma aranha em um mundo cheio de obstáculos e armadilhas!</p>
+                    
+                        <p>
+                        Como base no polimorfismo, usando um mini jogo de aranha. 
+                        O usuário terá suas funções de se locomover.
+                        <p></p>
+                        <br><strong><h3>Controles:</h3></strong>
+
+                                        <br>W ➔ Mover para frente
+                                        <br>A ➔ Mover para esquerda
+                                        <br>S ➔ Mover para trás
+                                        <br>D ➔ Mover para direita
+                                        <br>M ➔ Mostrar mapa
+                                        <br>R ➔ Descansar (recuperar energia)
+                                        <br>P ➔ Ver status das patas
+                                        <br>Q ➔ Sair do jogo
+                                <p></p>
+                                <br><strong><h3>Regras:</h3></strong>
+                                <p></p>
+                        <br>Você começa com 150 de energia.
+                        <br>Cada movimento gasta 5 de energia.
+                        <br>Cuidado com 💀 armadilhas (fim do jogo!) e 🚧 obstáculos.
+                        </p>
+                    
+                    
+                        <img 
+                            src="image/aranha-arranha.png" 
+                        style="
+                                max-width: 300px; 
+                                border-radius: 5px;
+                                display: block;
+                                margin: 0 auto;
+                            "
+                        ><div style="margin-top: 20px;">
+                            <a href="https://github.com/DenunDEV/AranhaMob/tree/main/AranhaMob" target="_blank" style="background: #9f4bcfff; color: black; padding: 8px 12px; text-decoration: none; border-radius: 4px;">🔗 Ver Projeto</a>
+                            <a href="https://drive.google.com/drive/folders/10xcxOqNy3zI5jWisRU6eFFzrVBtjGy6i?usp=sharing" download style="background: #4870bbff; color: black; padding: 8px 12px; text-decoration: none; border-radius: 4px; margin-left: 10px;">⬇️ Baixar Arquivo</a>
+
+                    
+                    </div>
+                `,
+
+                "3":`
+                    <div><h3>Opção 3 selecionada</h3><p>
+                    <p>Este é o conteúdo dinâmico da <strong>terceira opção</strong>.</p>
+
+                    </div>
+                `
+        };
+
+        function mostrarConteudo(select) {
+            const valor = select.value;
+            const div = document.getElementById("conteudo-exibido");
+            div.innerHTML = valor ? conteudos[valor] : "<p>Selecione uma opção.</p>";
+        }
+    </script>
+    
+
+    <main>
+        <div>
+
+        </div>
+    </main>
+
+        <footer class="footer bg-dark py-1 fixed-bottom">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- Copyright compacto -->
+                    <span class="footer-brand" style="color: #984bcfff; font-size: 0.8rem; white-space: nowrap;">
+                        <strong>© 2025 - DeNun DnG</strong>
+                    </span>
+                    
+                    <!-- Player em linha única compacto -->
+                        <div class="d-flex align-items-center" style="gap: 5px;">
+                            <!-- Nome da música -->
+                            <div class="now-playing" id="current-track-info" style="display: inline-block; width: 150px; font-size: 0.8rem; color: #ffffffff; overflow: hidden;">
+                                🎵 Playlist DeNun
+                            </div>
+                            
+                            <!-- Controles compactos -->
+                            <div class="d-flex align-items-center" style="gap: 3px; border: 2px inset #841ccfff;">
+                                <button class="btn btn-sm btn-outline-purple p-0" onclick="previousTrack()" title="Anterior" style="width: 24px; height: 24px;">
+                                    <i class="bi bi-skip-backward-fill" style="font-size: 0.7rem;"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-purple p-0" onclick="togglePlay()" id="play-pause-btn" title="Play/Pause" style="width: 24px; height: 24px;">
+                                    <i class="bi bi-play-fill" style="font-size: 0.7rem;"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-purple p-0" onclick="nextTrack()" title="Próxima" style="width: 24px; height: 24px;">
+                                    <i class="bi bi-skip-forward-fill" style="font-size: 0.7rem;"></i>
+                                </button>
+                                
+                                <!-- Volume compacto -->
+                                <div class="d-flex align-items-center" style="width: 70px; gap: 2px;">
+                                    <button class="btn btn-sm btn-outline-purple p-0" onclick="toggleMute()" id="mute-btn" title="Mutar" style="width: 24px; height: 24px;">
+                                        <i class="bi bi-volume-up-fill" style="font-size: 0.7rem;"></i>
+                                    </button>
+                                    <input type="range" min="0" max="100" value="80" 
+                                        class="volume-slider" 
+                                        id="volume-slider" 
+                                        oninput="setVolume(this.value)" 
+                                        title="Volume" 
+                                        style="width: 40px; height: 4px; margin: 0; padding: 0;">
+                                </div>
+                                
+                                <!-- Copiar link -->
+                                <button class="btn btn-sm btn-outline-purple p-0" onclick="copyTrackLink()" title="Copiar link" style="width: 24px; height: 24px;">
+                                    <i class="bi bi-link-45deg" style="font-size: 0.7rem;"></i>
+                                </button>
+                            </div>
+                        </div>
+                    
+                    <!-- Busca compacta -->
+                    <form class="d-flex align-items-center" role="search" style="max-width: 300px; gap: 10px;">
+                        <input class="form-control form-control-sm" type="search" placeholder="Buscar..." aria-label="<h2><strong>Buscar</strong></h2>" style="height: 30px; font-size: 1.0rem;">
+                        <button class="btn btn-sm btn-outline-success p-0" type="submit" style="width: 40px; height: 30px;">
+                            <i class="bi bi-search" style="font-size: 0.7rem;"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Player do YouTube invisível -->
+            <div id="youtube-player" style="display: none;"></div>
+        </footer>
+
+</body>
+
+    <script>
+        // Variáveis do player
+        let player;
+        let isPlaying = false;
+        let isMuted = false;
+        let currentVolume = 80;
+        const playlistId = "https://youtube.com/playlist?list=PLigLOh51rED-9fpOuu_eqXAEcHb1Hpdzy&si=KoHRdV7jkYLZ7Y1I"; // ID playlist
+        let currentVideoIndex = 0;
+        let playlistVideos = [];
+        
+        // API do YouTube 
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube-player', {
+                height: '0',
+                width: '0',
+                playerVars: {
+                    'autoplay': 0,
+                    'controls': 0,
+                    'disablekb': 1,
+                    'fs': 0,
+                    'rel': 0
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+        
+        function onPlayerReady(event) {
+            // Define o volume inicial
+            player.setVolume(currentVolume);
+            loadPlaylist();
+        }
+        
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.ENDED) {
+                nextTrack();
+            } else if (event.data == YT.PlayerState.PLAYING) {
+                isPlaying = true;
+                document.getElementById('play-pause-btn').innerHTML = '<i class="bi bi-pause-fill"></i>';
+            } else if (event.data == YT.PlayerState.PAUSED) {
+                isPlaying = false;
+                document.getElementById('play-pause-btn').innerHTML = '<i class="bi bi-play-fill"></i>';
+            }
+        }
+        
+        function loadPlaylist() {
+            // playlist
+            playlistVideos = [
+                {id: 'WGU_4-5RaxU', title: 'blondie - heart of glass'},
+                {id: 'rY0WxgSXdEE', title: 'queen - Another One Bites the Dust'},
+                {id: 'wMsazR6Tnf8', title: 'Joan Jett - I love rock and roll'},
+                {id: 'ToR93aj9U7w', title: 'Botanic Panic'},
+                {id: 'rHHEUyWJXhM', title: 'Creedence Clearwater Revival - Sweet Hitch-Hiker'},
+                {id: 'ZWijx_AgPiA', title: 'Creedence Clearwater Revival - Fortunate Son'},
+                {id: 'bpNw7jYkbVc', title: 'Joan Jett - I Hate Myself For Loving You'},
+                {id: 'o3hHsVtqNFQ', title: 'Blondie - Call Me'}
+                
+                // Adicione mais músicas conforme necessário
+            ];
+            playTrack(0);
+        }
+        
+        function playTrack(index) {
+            if (index >= 0 && index < playlistVideos.length) {
+                currentVideoIndex = index;
+                player.loadVideoById(playlistVideos[index].id);
+                updateTrackInfo();
+            }
+        }
+        
+        function togglePlay() {
+            if (isPlaying) {
+                player.pauseVideo();
+            } else {
+                player.playVideo();
+            }
+        }
+        
+        function nextTrack() {
+            const nextIndex = (currentVideoIndex + 1) % playlistVideos.length;
+            playTrack(nextIndex);
+        }
+        
+        function previousTrack() {
+            const prevIndex = (currentVideoIndex - 1 + playlistVideos.length) % playlistVideos.length;
+            playTrack(prevIndex);
+        }
+        
+        function updateTrackInfo() {
+            const trackInfo = document.getElementById('current-track-info');
+            trackInfo.textContent = `🎵 ${playlistVideos[currentVideoIndex].title}`;
+            
+            // Remove classes anteriores
+            trackInfo.classList.remove('scrolling');
+            
+            // Força reflow
+            void trackInfo.offsetWidth;
+            
+            // Verifica se precisa de animação (se o texto é maior que o contêiner)
+            if (trackInfo.scrollWidth > trackInfo.clientWidth) {
+                trackInfo.classList.add('scrolling');
+            }
+        }
+        
+            // Funções de controle de volume
+        function setVolume(volume) {
+            currentVolume = volume;
+            player.setVolume(volume);
+            
+            // Atualiza ícone do mute
+            if (volume == 0) {
+                isMuted = true;
+                document.getElementById('mute-btn').innerHTML = '<i class="bi bi-volume-mute-fill"></i>';
+            } else {
+                isMuted = false;
+                document.getElementById('mute-btn').innerHTML = '<i class="bi bi-volume-up-fill"></i>';
+            }
+        }
+        
+        function toggleMute() {
+            if (isMuted) {
+                player.unMute();
+                document.getElementById('mute-btn').innerHTML = '<i class="bi bi-volume-up-fill"></i>';
+                document.getElementById('volume-slider').value = currentVolume;
+            } else {
+                player.mute();
+                document.getElementById('mute-btn').innerHTML = '<i class="bi bi-volume-mute-fill"></i>';
+                document.getElementById('volume-slider').value = 0;
+            }
+            isMuted = !isMuted;
+        }
+        
+        function copyTrackLink() {
+            const videoId = playlistVideos[currentVideoIndex].id;
+            const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+            
+            navigator.clipboard.writeText(videoUrl).then(() => {
+                Swal.fire({
+                    position: 'bottom-end',
+                    icon: 'success',
+                    title: 'Link copiado!',
+                    text: 'O link da música foi copiado para sua área de transferência.',
+                    showConfirmButton: false,
+                    timer: 3000,
+                    background: '#000',
+                    color: '#ffffffff'
+                });
+            });
+        }
+        
+        // Carrega a API do YouTube
+        const tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        const firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+    </script>
+
+</html>

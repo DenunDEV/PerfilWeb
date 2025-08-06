@@ -1,0 +1,156 @@
+    @font-face {
+        font-family:"Skranji";
+        src: url('fonts\Skranji\Skranji-Regular.ttf') format('truetype');
+    }
+
+    body {
+        background: #000;
+        color: whitesmoke; 
+        font-family: 'PixelOperator', 'Courier New', monospace;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    h1 { 
+        font-size: 40px; 
+        font-style: normal; 
+    }
+    
+    p { 
+        font-size: 15px; 
+    }
+
+    /* Estilos para o SweetAlert2 personalizado */
+    .my-swal-title {
+        font-family: 'Press Start 2P', cursive !important; 
+        font-size: 40px !important; 
+        color: #841ccfff !important;
+    }
+
+    .my-swal-text {
+        text-align: center !important;
+        font-size: 35px !important;
+        color: #841ccfff !important;
+    }
+
+    .my-swal-popup {
+        width: 100% !important;
+        max-width: 600px !important;
+    }
+
+    /* Estilos para o footer e player de música */
+    .footer {
+        border-top: 5px solid #841ccfff;
+        z-index: 1000;
+        height: 80px;
+        background-color: #000;
+    }
+
+    .now-playing {
+        color: #841ccfff;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        width: 150px; /* Largura fixa para o contêiner */
+    }
+
+    @keyframes scrollText {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+
+    .now-playing.scrolling {
+        animation: scrollText 10s linear infinite;
+        white-space: nowrap; /* Impede quebras de linha */
+        padding-left: 100%; /* Garante espaço inicial para o deslize */
+    }
+
+    .now-playing.scrolling:hover {
+        animation-play-state: paused;
+    }
+
+    /* Estilos para os controles do player */
+    .radio-player {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .player-controls {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        flex-wrap: nowrap;
+    }
+
+    .btn-outline-purple {
+        color: #841ccfff;
+        border-color: #841ccfff;
+        padding: 0.15rem 0.3rem;
+        font-size: 0.8rem;
+        line-height: 1;
+    }
+
+    .btn-outline-purple:hover {
+        color: #000;
+        background-color: #841ccfff;
+    }
+
+    /* Estilos para o controle de volume */
+    .volume-control {
+        display: inline-flex;
+        align-items: center;
+        gap: 2px;
+        width: 70px;
+        min-width: 70px;
+        flex-shrink: 0;
+        
+    }
+
+    .volume-slider {
+        width: 50px;
+        height: 4px;
+        -webkit-appearance: none;
+        appearance: none;
+        background: #333;
+        border-radius: 3px;
+        outline: none;
+        accent-color: #841ccfff;
+        margin: 0;
+    }
+
+    .volume-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 8px;
+        height: 8px;
+        background: #841ccfff;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .volume-slider::-moz-range-thumb {
+        width: 8px;
+        height: 8px;
+        background: #841ccfff;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    /* Estilos gerais para alinhamento */
+    .d-flex.align-items-center {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+    /* Espaçamento entre grupos de controles */
+    .btn-group-separator {
+        margin: 0 5px;
+    }
+
+    /* Estilos para a barra de busca */
+    .form-control-sm {
+        height: 30px;
+        font-size: 0.7rem;
+    }
